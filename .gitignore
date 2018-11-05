@@ -1,0 +1,7 @@
+node_modules
+.vscode
+junk
+src/tests
+bin
+*.vsix
+vsc-extension-quickstart.md
