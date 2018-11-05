@@ -4,4 +4,4 @@ VSCode dark theme based on dracula theme. For personal use, feel free to downloa
 **Enjoy!**
 
 ## License
-MIT
+[MIT](https://github.com/ryuukibeat/Dark-Party/blob/master/LICENSE)
