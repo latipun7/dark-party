@@ -2,7 +2,7 @@
   "name": "dark-party",
   "displayName": "Dark Party",
   "description": "VSCode dark theme based on dracula theme. For personal use, feel free to download if you want to use it too.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ryuukibeat",
   "license": "MIT",
   "repository": {
@@ -15,7 +15,9 @@
   "engines": {
     "vscode": "^1.28.0"
   },
-  "categories": ["Themes"],
+  "categories": [
+    "Themes"
+  ],
   "contributes": {
     "themes": [
       {
@@ -39,7 +41,13 @@
     "vscode:prepublish": "npm run build"
   },
   "icon": "icon.png",
-  "keywords": ["dark party", "dracula", "custom theme", "theme", "vscode"],
+  "keywords": [
+    "dark party",
+    "dracula",
+    "custom theme",
+    "theme",
+    "vscode"
+  ],
   "devDependencies": {
     "js-yaml": "^3.12.0",
     "tinycolor2": "^1.4.1"
