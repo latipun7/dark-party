@@ -1,27 +1,20 @@
-'use strict';
-
+const fs = require('fs');
 const path = require('path');
-const fsp = require('./fsp');
-const loadThemes = require('./loadThemes');
+const generate = require('./generate');
 
-const THEME_DIR = path.join(__dirname, '..', 'themes');
-const THEME_YAML_FILE = path.join(__dirname, '..', 'src', 'dark-party.yml');
+const THEME_DIR = path.join(__dirname, '..', 'theme');
 
-function toJSON(theme) {
-  return JSON.stringify(theme, null, 4);
-}
+!fs.existsSync(THEME_DIR) && fs.mkdirSync(THEME_DIR);
 
-(async () => {
-  if (!await fsp.exists(THEME_DIR)) {
-    await fsp.mkdir(THEME_DIR);
-  }
+module.exports = async () => {
+  const { base } = await generate();
 
-  const { standardTheme, softTheme } = await loadThemes(THEME_YAML_FILE);
-  const standardThemePath = path.join(THEME_DIR, 'dark-party.color-theme.json');
-  const softThemePath = path.join(THEME_DIR, 'dark-party-soft.color-theme.json');
-
-  await Promise.all([
-    fsp.writeFile(standardThemePath, toJSON(standardTheme)),
-    fsp.writeFile(softThemePath, toJSON(softTheme))
+  return Promise.all([
+    fs.promises.writeFile(
+      path.join(THEME_DIR, 'dark-party.json'),
+      JSON.stringify(base, null, 2)
+    ),
   ]);
-})();
+};
+
+require.main === module && module.exports();

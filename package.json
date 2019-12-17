@@ -1,9 +1,9 @@
 {
   "name": "dark-party",
   "displayName": "Dark Party",
-  "description": "VSCode dark theme based on dracula theme. For personal use, feel free to download if you want to use it too.",
+  "description": "✨ VSCode dark theme based on Dracula theme and One Dark Pro color token. For personal use, feel free to download if you want to use it too.",
   "version": "1.0.2",
-  "publisher": "ryuukibeat",
+  "publisher": "RyuukiBeat",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,43 +13,51 @@
     "url": "https://github.com/ryuukibeat/Dark-Party/issues"
   },
   "engines": {
-    "vscode": "^1.28.0"
+    "vscode": "^1.41.0",
+    "yarn": ">=1.0.0"
   },
   "categories": [
     "Themes"
   ],
+  "galleryBanner": {
+    "color": "#282a36",
+    "theme": "dark"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Dark Party",
         "uiTheme": "vs-dark",
-        "path": "./themes/Dark-Party.color-theme.json"
-      },
-      {
-        "label": "Dark Party Soft",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Dark-Party-Soft.color-theme.json"
+        "path": "./theme/dark-party.json"
       }
     ]
   },
   "scripts": {
-    "attach": "node ./scripts/bootstrap.js attach",
     "build": "node ./scripts/build.js",
     "lint": "node ./scripts/lint.js",
-    "eject": "node ./scripts/bootstrap.js eject",
-    "package": "vsce package -o ./bin/dark-party.vsix",
-    "vscode:prepublish": "npm run build"
+    "package": "vsce package -o ./packages/dark-party.vsix",
+    "postversion": "git push --tags && echo \"Successfully released version $npm_package_version!\"",
+    "vscode:prepublish": "yarn build && yarn package"
   },
   "icon": "icon.png",
   "keywords": [
     "dark party",
     "dracula",
     "custom theme",
+    "one dark pro",
+    "dark",
+    "one dark",
+    "onedark",
+    "atom",
+    "color theme",
+    "color-theme",
+    "color",
     "theme",
     "vscode"
   ],
   "devDependencies": {
     "js-yaml": "^3.13.1",
-    "tinycolor2": "^1.4.1"
+    "prettier": "^1.19.1",
+    "vsce": "^1.71.0"
   }
 }
