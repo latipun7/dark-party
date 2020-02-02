@@ -1409,7 +1409,7 @@ tokenColors:
     settings:
       foreground: *chalky
   - name: punctuation.separator.parameters.python
-    scope: punctuation.separator.period.python,punctuation.separator.element.python,punctuation.parenthesis.begin.python,punctuation.parenthesis.end.python,
+    scope: punctuation.separator.period.python,punctuation.separator.element.python,punctuation.parenthesis.begin.python,punctuation.parenthesis.end.python
     settings:
       foreground: *lightWhite
   - name: support.variable.magic.python
