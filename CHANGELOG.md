@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [2.0.2] - 2020-02-03
+
+### Fixed
+
+- Fix extra comma at the syntax's scope
+
 ## [2.0.1] - 2019-12-17
 
 ### Fixed
@@ -32,7 +38,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release
 
-[unreleased]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.1...HEAD
+[unreleased]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/ryuukibeat/Dark-Party/compare/v1.0.2...v2.0.0
 [1.0.0]: https://github.com/ryuukibeat/Dark-Party/tree/cc28019ba07ec6f07118d3fe8e95fbd10bfc0ac3
