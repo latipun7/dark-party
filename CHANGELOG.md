@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix highlight diff to-file
+
 ## [2.0.2] - 2020-02-03
 
 ### Fixed
