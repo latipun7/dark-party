@@ -37,7 +37,7 @@
     "lint": "node ./scripts/lint.js",
     "package": "vsce package -o ./packages/dark-party.vsix",
     "postversion": "git push --tags && echo \"Successfully released new version!\"",
-    "code:publish": "vsce publish",
+    "vsce:publish": "vsce publish",
     "vscode:prepublish": "yarn build"
   },
   "icon": "icon.png",

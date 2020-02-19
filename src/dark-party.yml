@@ -188,6 +188,7 @@ colors:
   editor.selectionBackground: *SELECTION
   editor.selectionHighlightBackground: *BGLighter
   editor.inactiveSelectionBackground:
+  editor.foldBackground: *BGDark
 
   editor.wordHighlightBackground: !alpha [*CYAN, 50]
   editor.wordHighlightStrongBackground: !alpha [*GREEN, 50]

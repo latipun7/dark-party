@@ -6,27 +6,31 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Added
+
+- New background color for folded ranges.
+
 ### Fixed
 
-- Changelog's link and description
+- Changelog's link and description.
 
 ## [2.0.3] - 2020-02-04
 
 ### Fixed
 
-- Highlight diff to-file
+- Highlight diff to-file.
 
 ## [2.0.2] - 2020-02-03
 
 ### Fixed
 
-- Extra comma at the syntax's scope
+- Extra comma at the syntax's scope.
 
 ## [2.0.1] - 2019-12-17
 
 ### Fixed
 
-- Changelog's link
+- Changelog's link.
 
 ## [2.0.0] - 2019-12-17
 
@@ -40,13 +44,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Security
 
-- Bump js-yaml from 3.12.0 to 3.13.1 ([#1](https://github.com/ryuukibeat/Dark-Party/pull/1)) .
+- Bump js-yaml from 3.12.0 to 3.13.1 ([#1](https://github.com/ryuukibeat/Dark-Party/pull/1)).
 
 ## [1.0.0] - 2018-11-6
 
 ### Added
 
-- Initial release
+- Initial release.
 
 [unreleased]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.3...HEAD
 [2.0.3]: https://github.com/ryuukibeat/Dark-Party/compare/v2.0.2...v2.0.3
