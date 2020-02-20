@@ -409,6 +409,10 @@ tokenColors:
     scope: markup.quote.markdown
     settings:
       foreground: *dark
+  - name: '[YAML for JS] embedded list dash highlight'
+    scope: punctuation.definition.block.sequence.item.yaml
+    settings:
+      foreground: *lightWhite
   - name: Comments
     scope: comment, punctuation.definition.comment
     settings:
