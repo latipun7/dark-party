@@ -172,7 +172,8 @@ colors:
   tab.activeBackground: *BG
   tab.activeForeground: *FG
   tab.border: *BGDarker
-  tab.activeBorder: !alpha [*PINK, 80]
+  tab.activeBorderTop: !alpha [*PINK, 80]
+  tab.activeBorder:
   tab.unfocusedActiveBorder:
   tab.inactiveBackground: *BGDark
   tab.inactiveForeground: *COMMENT
@@ -391,7 +392,7 @@ colors:
 
   # Breadcrumbs
   breadcrumb.foreground: *COMMENT
-  breadcrumb.background: *BGDark
+  breadcrumb.background: *BG
   breadcrumb.focusForeground: *FG
   breadcrumb.activeSelectionForeground: *FG
   breadcrumbPicker.background: *BGDarker
