@@ -47,7 +47,7 @@ darkparty:
     - &COLOR15 '#d7dae0'
   other:
     - &LineHighlight '#44475A75'
-    - &NonText '#424450'
+    - &NonText '#FFFFFF1A'
     - &WHITE '#ffffff'
     - &TAB_DROP_BG '#44475A70'
     # UI Variants
