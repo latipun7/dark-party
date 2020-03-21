@@ -77,6 +77,8 @@ colors:
   terminal.ansiMagenta: *COLOR5
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
+  terminalCursor.background:
+  terminalCursor.foreground: *PINK
 
   # Contrast Colors
   contrastBorder: *BGDarker
@@ -184,7 +186,7 @@ colors:
   editor.foreground: *FG
   editor.background: *BG
   editorLineNumber.foreground: *COMMENT
-  editorCursor.foreground:
+  editorCursor.foreground: *PINK
 
   editor.selectionBackground: *SELECTION
   editor.selectionHighlightBackground: *BGLighter
