@@ -4,11 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.1.4] - 2020-03-29
+
+### Change
+
+- Change Publisher name.
+
 ## [2.1.3] - 2020-03-22
 
 ### Change
 
-- Update cursor color
+- Update cursor color.
 
 ## [2.1.2] - 2020-03-19
 
@@ -71,7 +77,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release.
 
-[unreleased]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.3...HEAD
+[unreleased]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.4...HEAD
+[2.1.4]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.3...v2.1.4
 [2.1.3]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.2...v2.1.3
 [2.1.2]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.1...v2.1.2
 [2.1.1]: https://github.com/ryuukibeat/Dark-Party/compare/v2.1.0...v2.1.1
