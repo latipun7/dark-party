@@ -200,7 +200,7 @@ colors:
   editor.findMatchHighlightBackground: !alpha [*WHITE, 40]
   editor.findRangeHighlightBackground: *LineHighlight
 
-  editor.hoverHighlightBackground: *BGDarker
+  editor.hoverHighlightBackground: !alpha [*CYAN, 50]
 
   editor.lineHighlightBackground:
   editor.lineHighlightBorder: *SELECTION
