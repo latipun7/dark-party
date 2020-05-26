@@ -2,6 +2,7 @@ name: Dark Party
 author: RyuukiBeat
 $schema: vscode://schemas/color-theme
 type: dark
+semanticHighlighting: true
 darkparty:
   base:
     - &BG '#282A36'
