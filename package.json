@@ -60,7 +60,7 @@
   ],
   "devDependencies": {
     "js-yaml": "^3.14.0",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.0",
     "vsce": "^1.81.1"
   }
 }
