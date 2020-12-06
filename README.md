@@ -10,4 +10,4 @@
 
 ## License
 
-[MIT](https://github.com/ryuukibeat/Dark-Party/blob/master/LICENSE)
+[MIT](https://github.com/ryuukibeat/dark-party/blob/master/LICENSE)

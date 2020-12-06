@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ruppyio/Dark-Party"
+    "url": "https://github.com/Ruppyio/dark-party"
   },
   "bugs": {
-    "url": "https://github.com/Ruppyio/Dark-Party/issues"
+    "url": "https://github.com/Ruppyio/dark-party/issues"
   },
   "engines": {
     "vscode": "^1.41.0",
