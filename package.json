@@ -59,7 +59,7 @@
     "vscode"
   ],
   "devDependencies": {
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^3.14.1",
     "prettier": "^2.2.1",
     "vsce": "^1.83.0"
   }
