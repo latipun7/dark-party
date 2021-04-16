@@ -14,13 +14,13 @@
   },
   "engines": {
     "vscode": "^1.41.0",
-    "yarn": ">=1.0.0"
+    "yarn": ">=1.19.0"
   },
   "categories": [
     "Themes"
   ],
   "galleryBanner": {
-    "color": "#282a36",
+    "color": "#d55fde",
     "theme": "dark"
   },
   "contributes": {
@@ -33,8 +33,9 @@
     ]
   },
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "lint": "node ./scripts/lint.js",
+    "build": "yarn format && yarn lint && node ./scripts/build.js",
+    "format": "prettier --write .",
+    "lint": "eslint --fix --cache --ext .js .",
     "package": "vsce package -o ./packages/dark-party.vsix",
     "postversion": "git push && git push --tags && echo \"Successfully released new version!\"",
     "publish:patch": "vsce publish patch",
@@ -59,8 +60,12 @@
     "vscode"
   ],
   "devDependencies": {
-    "js-yaml": "^3.14.1",
-    "prettier": "^2.2.1",
-    "vsce": "^1.87.1"
+    "chroma-js": "^2.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-ruppy-node": "^1.5.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1"
   }
 }
