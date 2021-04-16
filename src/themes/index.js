@@ -1,5 +1,6 @@
 'use strict';
 
+const semanticTokenColors = require('./semantic-highlight');
 const tokenColors = require('./syntax-highlight');
 const colors = require('./theme-color');
 
@@ -9,6 +10,7 @@ const darkParty = {
   type: 'dark',
   semanticHighlighting: true,
   colors,
+  semanticTokenColors,
   tokenColors,
 };
 
