@@ -33,7 +33,7 @@
     ]
   },
   "scripts": {
-    "build": "yarn format && yarn lint && node ./scripts/build.js",
+    "build": "yarn format && yarn lint && node ./src/index.js",
     "format": "prettier --write .",
     "lint": "eslint --fix --cache --ext .js .",
     "package": "vsce package -o ./packages/dark-party.vsix",
