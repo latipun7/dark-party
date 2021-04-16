@@ -78,7 +78,6 @@ const themeColor = {
   // Activity Bar
   'activityBar.background': theme.backgroundLight,
   'activityBar.inactiveForeground': theme.comment,
-  'activityBar.dropBackground': null,
   'activityBar.foreground': theme.foreground,
   'activityBar.border': null,
   'activityBar.activeBorder': chroma(theme.pink).alpha(0.5).hex(),
@@ -98,7 +97,6 @@ const themeColor = {
   // Minimap
 
   // Editor Groups & Tabs
-  'editorGroup.background': null,
   'editorGroup.border': theme.purple,
   'editorGroup.dropBackground': theme.tabDropBackground,
   'editorGroupHeader.noTabsBackground': null,
@@ -176,7 +174,6 @@ const themeColor = {
 
   // Editor widget colors
   'editorWidget.background': theme.backgroundDark,
-  editorWidgetBorder: null,
   'editorSuggestWidget.background': theme.backgroundDark,
   'editorSuggestWidget.border': null,
   'editorSuggestWidget.foreground': theme.foreground,
@@ -316,7 +313,6 @@ const themeColor = {
   // Settings Editor colors
   'settings.headerForeground': theme.foreground,
   'settings.modifiedItemIndicator': theme.orange,
-  'settings.inactiveSelectedItemBorder': null,
   'settings.dropdownBackground': theme.backgroundDark,
   'settings.dropdownForeground': theme.foreground,
   'settings.dropdownBorder': theme.backgroundDarker,

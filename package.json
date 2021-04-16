@@ -34,6 +34,7 @@
   },
   "scripts": {
     "build": "yarn format && yarn lint && node ./src/index.js",
+    "check": "node ./src/check-color-theme.js",
     "format": "prettier --write .",
     "lint": "eslint --fix --cache --ext .js .",
     "package": "vsce package -o ./packages/dark-party.vsix",
