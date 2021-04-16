@@ -22,6 +22,8 @@ export interface TokenColor {
   settings: TokenSettings;
 }
 
+export type SemanticTokenColor = Record<string, string | TokenSettings>;
+
 /** Dark Party color theme. */
 export interface DarkParty {
   /** Name of the theme. */
