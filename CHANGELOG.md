@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [3.0.0] - 2021-04-17
+
+### Change
+
+- Add dart semantic highlighting.
+- Lot of improvement on syntax highlighting.
+- Code cleanup and refactor.
+
 ## [2.2.0] - 2020-05-27
 
 ### Change
@@ -88,7 +96,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release.
 
-[unreleased]: https://github.com/Ruppyio/dark-party/compare/v2.2.0...HEAD
+[unreleased]: https://github.com/Ruppyio/dark-party/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/Ruppyio/dark-party/compare/v2.2.0...v3.0.0
 [2.2.0]: https://github.com/Ruppyio/dark-party/compare/v2.1.4...v2.2.0
 [2.1.4]: https://github.com/Ruppyio/dark-party/compare/v2.1.3...v2.1.4
 [2.1.3]: https://github.com/Ruppyio/dark-party/compare/v2.1.2...v2.1.3

@@ -1,3 +1,4 @@
+.git/
 .github/
 .vscode/
 bin/
@@ -5,8 +6,15 @@ junk/
 node_modules/
 scripts/
 src/
+theme/missing-keys.txt
+theme/test.txt
 packages/
 
 .editorconfig
+.eslintcache
+.eslintignore
+.eslintrc.js
+.gitignore
 .prettierignore
 .prettierrc
+jsconfig.json
