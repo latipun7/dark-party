@@ -5,4 +5,7 @@ updates:
     schedule:
       interval: weekly
       timezone: Asia/Jakarta
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 7
+    commit-message:
+      prefix: "chore"
+      include: "scope"
