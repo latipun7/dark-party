@@ -330,25 +330,25 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-prettier@^8.1.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.2.0.tgz#78de77d63bca8e9e59dae75a614b5299925bb7b3"
-  integrity sha512-dWV9EVeSo2qodOPi1iBYU/x6F6diHv8uujxbxr77xExs3zTAlNXvVZKiyLsQGNz7yPV2K49JY5WjPzNIuDc2Bw==
+eslint-config-prettier@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
+  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-ruppy-base@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-1.6.0.tgz#1979ccc6ef5749b20e1e571b76f1241164a75ca1"
-  integrity sha512-q2Ow9JjaBQS1mJShLb02KKXQE3sb7UR+Yh4nyXH/2czecC/wYfgpqLMXilwRRsM3yBQrTQxXWxLtFu+RPrLgBg==
+eslint-config-ruppy-base@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-1.6.1.tgz#480e60a37d7b4e3ee1aad9ebe2134f105b1e0553"
+  integrity sha512-VOd9nSiiFH0peePKZbvzggk9uW3yk8/vYVyKCxyA2oHfWpgJuxVDp70aDb83dt+2pV2xu+MM37yk1JlXTotEgQ==
   dependencies:
     confusing-browser-globals "^1.0.10"
-    eslint-config-prettier "^8.1.0"
+    eslint-config-prettier "^8.3.0"
 
-eslint-config-ruppy-node@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-1.5.1.tgz#44c0b709ef0decd8dea6b6d583361535c8434c3c"
-  integrity sha512-sGtk4uih5zXzyeNhqDs6e7fH7wWjgdWPFpSjd0riB32swRFDRY/K2XIUA+2yvAglOJQzdBfdYFtarVLxhSH8LQ==
+eslint-config-ruppy-node@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-1.6.0.tgz#9809080a5c6e2609c3c067458cb8747a6c696f45"
+  integrity sha512-YUgju2j8pXkK020rJHo3JTO//gtlgTqvD2Fllmj8Aq6UeRjgBTpkfPgn3yUQgsLZm/YbrYRuw9VSqjyfjUZETQ==
   dependencies:
-    eslint-config-ruppy-base "^1.6.0"
+    eslint-config-ruppy-base "^1.6.1"
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"

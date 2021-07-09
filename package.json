@@ -63,7 +63,7 @@
   "devDependencies": {
     "chroma-js": "^2.1.2",
     "eslint": "^7.25.0",
-    "eslint-config-ruppy-node": "^1.5.1",
+    "eslint-config-ruppy-node": "^1.6.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
