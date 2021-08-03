@@ -685,8 +685,7 @@ const syntaxHighlight = [
     },
   },
   {
-    name:
-      'Source Js Keyword Operator Delete,source Js Keyword Operator In,source Js Keyword Operator Of,source Js Keyword Operator Instanceof,source Js Keyword Operator New,source Js Keyword Operator Typeof,source Js Keyword Operator Void',
+    name: 'Source Js Keyword Operator Delete,source Js Keyword Operator In,source Js Keyword Operator Of,source Js Keyword Operator Instanceof,source Js Keyword Operator New,source Js Keyword Operator Typeof,source Js Keyword Operator Void',
     scope:
       'keyword.operator.expression.delete,keyword.operator.expression.in,keyword.operator.expression.of,keyword.operator.expression.instanceof,keyword.operator.new,keyword.operator.expression.typeof,keyword.operator.expression.void',
     settings: {
@@ -1032,8 +1031,7 @@ const syntaxHighlight = [
     },
   },
   {
-    name:
-      'Source Json Meta Structure Dictionary Json > String Quoted Json > Punctuation String',
+    name: 'Source Json Meta Structure Dictionary Json > String Quoted Json > Punctuation String',
     scope:
       'source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string',
     settings: {
@@ -1041,8 +1039,7 @@ const syntaxHighlight = [
     },
   },
   {
-    name:
-      'Source Json Meta Structure Dictionary Json > Value Json > String Quoted Json,source Json Meta Structure Array Json > Value Json > String Quoted Json,source Json Meta Structure Dictionary Json > Value Json > String Quoted Json > Punctuation,source Json Meta Structure Array Json > Value Json > String Quoted Json > Punctuation',
+    name: 'Source Json Meta Structure Dictionary Json > Value Json > String Quoted Json,source Json Meta Structure Array Json > Value Json > String Quoted Json,source Json Meta Structure Dictionary Json > Value Json > String Quoted Json > Punctuation,source Json Meta Structure Array Json > Value Json > String Quoted Json > Punctuation',
     scope:
       'source.json meta.structure.dictionary.json > value.json > string.quoted.json,source.json meta.structure.array.json > value.json > string.quoted.json,source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation,source.json meta.structure.array.json > value.json > string.quoted.json > punctuation',
     settings: {
@@ -1050,8 +1047,7 @@ const syntaxHighlight = [
     },
   },
   {
-    name:
-      'Source Json Meta Structure Dictionary Json > Constant Language Json,source Json Meta Structure Array Json > Constant Language Json',
+    name: 'Source Json Meta Structure Dictionary Json > Constant Language Json,source Json Meta Structure Array Json > Constant Language Json',
     scope:
       'source.json meta.structure.dictionary.json > constant.language.json,source.json meta.structure.array.json > constant.language.json',
     settings: {
@@ -1468,8 +1464,7 @@ const syntaxHighlight = [
     },
   },
   {
-    name:
-      'styling css pseudo-elements/classes to be able to differentiate from classes which are the same colour',
+    name: 'styling css pseudo-elements/classes to be able to differentiate from classes which are the same colour',
     scope: [
       'entity.other.attribute-name.pseudo-element',
       'entity.other.attribute-name.pseudo-class',
