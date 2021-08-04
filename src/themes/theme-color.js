@@ -236,7 +236,7 @@ const themeColor = {
   'statusBarItem.hoverBackground': null,
   'statusBarItem.prominentBackground': theme.red,
   'statusBarItem.prominentHoverBackground': theme.orange,
-  'statusBarItem.remoteForeground': theme.foreground,
+  'statusBarItem.remoteForeground': theme.background,
   'statusBarItem.remoteBackground': theme.purple,
   'statusBar.border': null,
 
