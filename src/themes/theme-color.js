@@ -6,7 +6,7 @@ const { theme } = require('./colors');
 const themeColor = {
   // Contrast colors
   contrastActiveBorder: null,
-  contrastBorder: theme.backgroundDarker,
+  contrastBorder: null,
 
   // Base colors
   focusBorder: theme.comment,
