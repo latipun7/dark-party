@@ -68,7 +68,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: yarn build && yarn semantic-release
+        run: |
+          yarn build
+          yarn semantic-release
 
   test_release:
     name: Test Release ✨🚀
@@ -95,4 +97,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: yarn build && yarn semantic-release --branches $GITHUB_HEAD_REF --dry-run --debug
+        run: |
+          yarn build
+          yarn semantic-release --branches $GITHUB_HEAD_REF --no-ci --dry-run --debug
