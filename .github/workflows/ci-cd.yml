@@ -99,4 +99,4 @@ jobs:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
           yarn build
-          yarn semantic-release --branches $GITHUB_HEAD_REF --no-ci --dry-run --debug
+          yarn semantic-release --branches $GITHUB_REF --no-ci --dry-run --debug
