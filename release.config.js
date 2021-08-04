@@ -17,7 +17,14 @@ module.exports = {
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
-    ['@semantic-release/changelog', { changelogFile: 'changelog.md' }],
+    [
+      '@semantic-release/changelog',
+      {
+        changelogFile: 'changelog.md',
+        changelogTitle:
+          '# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThis project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.\n',
+      },
+    ],
     ['semantic-release-vsce', { packageVsix: true }],
     [
       '@semantic-release/git',
@@ -66,8 +73,6 @@ module.exports = {
     },
   },
   presetConfig: {
-    header:
-      '# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThis project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.\n',
     types: [
       { type: 'feat', section: '✨ Features' },
       { type: 'feature', section: '✨ Features' },
