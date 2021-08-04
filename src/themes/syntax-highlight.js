@@ -742,13 +742,6 @@ const syntaxHighlight = [
     },
   },
   {
-    name: 'Inherited Class',
-    scope: 'entity.other.inherited-class',
-    settings: {
-      foreground: text.chalky,
-    },
-  },
-  {
     name: 'Constant other symbol',
     scope: 'constant.other.symbol',
     settings: {
@@ -1783,6 +1776,27 @@ const syntaxHighlight = [
     scope: ['support.other.namespace.php'],
     settings: {
       foreground: text.lightWhite,
+    },
+  },
+  {
+    name: 'variable.other.object',
+    scope: ['variable.other.object'],
+    settings: {
+      foreground: text.chalky,
+    },
+  },
+  {
+    name: 'variable.other.constant.property',
+    scope: ['variable.other.constant.property'],
+    settings: {
+      foreground: text.coral,
+    },
+  },
+  {
+    name: 'entity.other.inherited-class',
+    scope: ['entity.other.inherited-class'],
+    settings: {
+      foreground: text.chalky,
     },
   },
 ];
