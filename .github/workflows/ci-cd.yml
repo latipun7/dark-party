@@ -64,6 +64,9 @@ jobs:
       - name: Install Dependencies ✨
         run: yarn install --frozen-lockfile --check-files
 
+      - name: Install vsce 💻
+        run: npm install -g vsce
+
       - name: Release 🚀
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
