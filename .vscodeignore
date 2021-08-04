@@ -1,5 +1,6 @@
 .git/
 .github/
+.husky/
 .vscode/
 bin/
 junk/
@@ -18,3 +19,5 @@ packages/
 .prettierignore
 .prettierrc
 jsconfig.json
+release.config.js
+*.vsix
