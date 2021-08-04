@@ -23,6 +23,9 @@ const themeColor = {
   'button.background': theme.selection,
   'button.foreground': theme.foreground,
   'button.hoverBackground': null,
+  'button.secondaryForeground': theme.foreground,
+  'button.secondaryBackground': theme.background,
+  'button.secondaryHoverBackground': theme.backgroundLight,
 
   // Dropdown control
   'dropdown.background': theme.backgroundLight,
