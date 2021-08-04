@@ -71,32 +71,3 @@ jobs:
         run: |
           yarn build
           yarn semantic-release
-
-  test_release:
-    name: Test Release ✨🚀
-    runs-on: ubuntu-latest
-    needs: test_build
-    if: github.event_name == 'pull_request'
-
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.4
-        with:
-          fetch-depth: 0
-
-      - name: Use NodeJS LTS 📦
-        uses: actions/setup-node@v2.3.0
-        with:
-          node-version: "lts/*"
-          cache: yarn
-
-      - name: Install Dependencies ✨
-        run: yarn install --frozen-lockfile --check-files
-
-      - name: Test Release 🚀
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: |
-          yarn build
-          yarn semantic-release --branches $GITHUB_REF --no-ci --dry-run --debug
