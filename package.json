@@ -32,6 +32,15 @@
       }
     ]
   },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
   "scripts": {
     "cm": "cz",
     "check": "node ./src/check-color-theme.js",
