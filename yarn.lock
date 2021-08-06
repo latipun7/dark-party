@@ -475,6 +475,11 @@
   dependencies:
     "@octokit/openapi-types" "^9.4.0"
 
+"@rushstack/eslint-patch@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"
+  integrity sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==
+
 "@semantic-release/changelog@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-5.0.1.tgz#50a84b63e5d391b7debfe021421589fa2bcdafe4"
@@ -1713,20 +1718,24 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-ruppy-base@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-1.6.1.tgz#480e60a37d7b4e3ee1aad9ebe2134f105b1e0553"
-  integrity sha512-VOd9nSiiFH0peePKZbvzggk9uW3yk8/vYVyKCxyA2oHfWpgJuxVDp70aDb83dt+2pV2xu+MM37yk1JlXTotEgQ==
+eslint-config-ruppy-base@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-2.0.0.tgz#098e672f61028952c500440453d9877b7b3d31de"
+  integrity sha512-yeY++rearlm2FlVpN+Oq7CK6cgGfv2d0KVD/VUgjFEc0EGYLC35T6cIcjl7i4DC767pDG6WPnF3I/MyxszJNKw==
   dependencies:
+    "@rushstack/eslint-patch" "^1.0.6"
     confusing-browser-globals "^1.0.10"
     eslint-config-prettier "^8.3.0"
+    eslint-plugin-prettier "^3.4.0"
 
-eslint-config-ruppy-node@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-1.7.0.tgz#b1dba3c5857fe85a29c3435a7bd6eee07ed21c67"
-  integrity sha512-YRZikkT4KkD06H/8nr1ymJjnFmBnsrPBxrLKCC8Ch+oJrW14ZGiuX0OvPKVXBfyARNL6llryDti/iqLlr8vWJg==
+eslint-config-ruppy-node@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-2.0.1.tgz#61e58ce4161ae48a3ece6822623ecd38d87d8317"
+  integrity sha512-dgPHNI+vMRdRiEu2+DT7bKua7zZTCAO/0d4KgxJr6RRcI1k3Vory/gDJLGq1H9lqxIgCW+2edesKxL3ummJebA==
   dependencies:
-    eslint-config-ruppy-base "^1.6.1"
+    eslint-config-ruppy-base "^2.0.0"
+    eslint-plugin-import "^2.23.4"
+    eslint-plugin-node "^11.1.0"
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
