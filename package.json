@@ -77,7 +77,7 @@
     "conventional-changelog-conventionalcommits": "^4.6.0",
     "eslint": "^7.32.0",
     "eslint-config-ruppy-node": "^1.7.0",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.1",
