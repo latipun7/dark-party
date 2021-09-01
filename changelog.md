@@ -1,3 +1,9 @@
+### [3.1.1](https://github.com/Ruppyio/dark-party/compare/v3.1.0...v3.1.1) (2021-09-01)
+
+### 🔐 Security Patches
+
+- **deps-tree:** bump `tar` to 6.1.11 ([#75](https://github.com/Ruppyio/dark-party/issues/75)) ([c765983](https://github.com/Ruppyio/dark-party/commit/c76598339aae5ff9480bbc0364327d95c71912f9))
+
 ## [3.1.0](https://github.com/Ruppyio/dark-party/compare/v3.0.0...v3.1.0) (2021-08-04)
 
 ### ✨ Features
