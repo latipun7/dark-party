@@ -68,23 +68,21 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
     "@commitlint/cz-commitlint": "^13.1.0",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
+    "@latipun7/commitlintrc": "^1.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
     "chroma-js": "^2.1.2",
     "commitizen": "^4.2.4",
-    "conventional-changelog-conventionalcommits": "^4.6.0",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
-    "eslint-config-ruppy-node": "^1.7.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.1",
-    "prettier": "^2.3.2",
-    "semantic-release": "^17.4.5",
-    "semantic-release-vsce": "^3.4.1"
+    "eslint-config-ruppy-node": "^3.0.0",
+    "husky": "^7.0.2",
+    "inquirer": "^8.1.5",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0",
+    "semantic-release-vsce": "^3.5.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
@@ -95,38 +93,8 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "body-max-line-length": [
-        1,
-        "always",
-        100
-      ],
-      "footer-max-line-length": [
-        1,
-        "always",
-        100
-      ],
-      "type-enum": [
-        2,
-        "always",
-        [
-          "build",
-          "chore",
-          "ci",
-          "docs",
-          "feat",
-          "fix",
-          "perf",
-          "refactor",
-          "revert",
-          "style",
-          "test",
-          "security"
-        ]
-      ]
-    }
+      "@latipun7/commitlintrc"
+    ]
   },
   "config": {
     "commitizen": {
