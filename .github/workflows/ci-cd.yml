@@ -1,6 +1,3 @@
-# https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-# Workflows commands (::set-output, etc): # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
-
 name: Continuous Integration and Continuous Delivery ⚙🚀
 
 on:
@@ -8,7 +5,7 @@ on:
     branches: [main, "**.x", next, beta, alpha]
 
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize]
 
 jobs:
   test_build:
@@ -32,7 +29,7 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies ✨
-        run: yarn install --frozen-lockfile --check-files
+        run: yarn --immutable --check-cache
 
       - name: Run Linter 👨🏻‍💻
         run: yarn lint
@@ -62,7 +59,7 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies ✨
-        run: yarn install --frozen-lockfile --check-files
+        run: yarn --immutable --check-cache
 
       - name: Install vsce 💻
         run: npm install -g vsce

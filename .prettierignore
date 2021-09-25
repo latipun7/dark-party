@@ -1,3 +1,4 @@
+.yarn/
 node_modules/
 bin/
 junk/
@@ -6,5 +7,6 @@ junk/
 .editorconfig
 .eslintignore
 .gitignore
+.pnp.*
 .prettierignore
 yarn.lock

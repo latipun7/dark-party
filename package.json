@@ -12,9 +12,10 @@
   "bugs": {
     "url": "https://github.com/Ruppyio/dark-party/issues"
   },
+  "packageManager": "yarn@3.0.2",
   "engines": {
     "vscode": "^1.41.0",
-    "yarn": ">=1.19.0"
+    "node": ">=14.17"
   },
   "categories": [
     "Themes"
