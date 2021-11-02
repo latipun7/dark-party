@@ -321,16 +321,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@latipun7/commitlintrc@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@latipun7/commitlintrc@npm:1.0.0"
+"@latipun7/commitlintrc@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@latipun7/commitlintrc@npm:1.1.0"
   dependencies:
-    conventional-changelog-conventionalcommits: ^4.6.0
+    conventional-changelog-conventionalcommits: ^4.6.1
   peerDependencies:
-    "@commitlint/cli": "*"
-    "@commitlint/cz-commitlint": "*"
-    commitizen: "*"
-    inquirer: "*"
+    "@commitlint/cli": ^14.1
+    "@commitlint/cz-commitlint": ^14.1
+    commitizen: ^4.2
+    inquirer: ^8.2
   peerDependenciesMeta:
     "@commitlint/cz-commitlint":
       optional: true
@@ -338,7 +338,7 @@ __metadata:
       optional: true
     inquirer:
       optional: true
-  checksum: f36b45abbba4ad97df288d907de8556e3b9e6986f70451969f43e14f69315c84ed841a730166931afbc38d5d015e6493fc7ec8599ba83519acd92292e95c93fc
+  checksum: 841f697bb5c15f816e29645906e3bac0deb2f71d7559cd0b037a20f88bbbfe4cdbd54be8ec36a08d3dc53e8a2f19c45f56b23fe60f31f6b4a322b0eb3422cc1c
   languageName: node
   linkType: hard
 
@@ -1801,7 +1801,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.6.0, conventional-changelog-conventionalcommits@npm:^4.6.1":
+"conventional-changelog-conventionalcommits@npm:^4.6.1":
   version: 4.6.1
   resolution: "conventional-changelog-conventionalcommits@npm:4.6.1"
   dependencies:
@@ -1979,7 +1979,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^13.2.1
     "@commitlint/cz-commitlint": ^13.2.1
-    "@latipun7/commitlintrc": ^1.0.0
+    "@latipun7/commitlintrc": ^1.1.0
     "@semantic-release/changelog": ^6.0.0
     "@semantic-release/git": ^10.0.0
     chroma-js: ^2.1.2
