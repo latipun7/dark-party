@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/Ruppyio/dark-party/issues"
   },
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.1.0",
   "engines": {
     "vscode": "^1.41.0",
     "node": ">=14.17"
