@@ -82,7 +82,7 @@
     "inquirer": "^8.2.0",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
-    "semantic-release": "^18.0.0",
+    "semantic-release": "^18.0.1",
     "semantic-release-vsce": "^3.5.0"
   },
   "lint-staged": {
