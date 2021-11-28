@@ -322,14 +322,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@latipun7/commitlintrc@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@latipun7/commitlintrc@npm:1.1.0"
+"@latipun7/commitlintrc@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@latipun7/commitlintrc@npm:1.1.2"
   dependencies:
     conventional-changelog-conventionalcommits: ^4.6.1
   peerDependencies:
-    "@commitlint/cli": ^14.1
-    "@commitlint/cz-commitlint": ^14.1
+    "@commitlint/cli": ^15.0
+    "@commitlint/cz-commitlint": ^15.0
     commitizen: ^4.2
     inquirer: ^8.2
   peerDependenciesMeta:
@@ -339,7 +339,7 @@ __metadata:
       optional: true
     inquirer:
       optional: true
-  checksum: 841f697bb5c15f816e29645906e3bac0deb2f71d7559cd0b037a20f88bbbfe4cdbd54be8ec36a08d3dc53e8a2f19c45f56b23fe60f31f6b4a322b0eb3422cc1c
+  checksum: 75e6477362e1f24d0e9dc5458792829ec05081a0c5e635509de3fb3d291f5a20e0d4422dd95548eafd8ffc90f42a34eab5c269ba113b0c7d96b81ded588a7504
   languageName: node
   linkType: hard
 
@@ -1987,7 +1987,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^14.1.0
     "@commitlint/cz-commitlint": ^14.1.0
-    "@latipun7/commitlintrc": ^1.1.0
+    "@latipun7/commitlintrc": ^1.1.2
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
     chroma-js: ^2.1.2
