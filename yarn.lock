@@ -343,6 +343,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@latipun7/releaserc@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@latipun7/releaserc@npm:2.2.0"
+  dependencies:
+    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/git": ^10.0.1
+    conventional-changelog-conventionalcommits: ^4.6.1
+    read-pkg: ^5.2.0
+    semantic-release-vsce: ^3.5.0
+  peerDependencies:
+    semantic-release: ^18.0
+    semantic-release-monorepo: ^7.0
+  peerDependenciesMeta:
+    semantic-release-monorepo:
+      optional: true
+  checksum: c98a12b433d0cdcac689c6dba320870c640bdfcb16933d38cd4077cb74c50bf57778deca051d24158f90972caec78b3b74118a2eacc5625331c3ec49a3e97138
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1988,11 +2007,9 @@ __metadata:
     "@commitlint/cli": ^14.1.0
     "@commitlint/cz-commitlint": ^14.1.0
     "@latipun7/commitlintrc": ^1.1.2
-    "@semantic-release/changelog": ^6.0.1
-    "@semantic-release/git": ^10.0.1
+    "@latipun7/releaserc": ^2.2.0
     chroma-js: ^2.1.2
     commitizen: ^4.2.4
-    conventional-changelog-conventionalcommits: ^4.6.1
     eslint: ^7.32.0
     eslint-config-ruppy-node: ^3.0.0
     husky: ^7.0.4
@@ -2000,7 +2017,6 @@ __metadata:
     lint-staged: ^11.2.6
     prettier: ^2.4.1
     semantic-release: ^18.0.0
-    semantic-release-vsce: ^3.5.0
   languageName: unknown
   linkType: soft
 
