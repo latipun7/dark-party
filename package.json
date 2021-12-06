@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ruppyio/dark-party"
+    "url": "https://github.com/latipun7/dark-party"
   },
   "bugs": {
-    "url": "https://github.com/Ruppyio/dark-party/issues"
+    "url": "https://github.com/latipun7/dark-party/issues"
   },
   "packageManager": "yarn@3.1.0",
   "engines": {
