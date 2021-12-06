@@ -71,16 +71,22 @@
     "@commitlint/cli": "^14.1.0",
     "@commitlint/cz-commitlint": "^14.1.0",
     "@latipun7/commitlintrc": "^1.1.2",
+    "@latipun7/eslint-config": "^1.0.3",
     "@latipun7/releaserc": "^2.2.0",
     "chroma-js": "^2.1.2",
     "commitizen": "^4.2.4",
-    "eslint": "^7.32.0",
-    "eslint-config-ruppy-node": "^3.0.0",
+    "eslint": "^8.4.0",
     "husky": "^7.0.4",
     "inquirer": "^8.2.0",
     "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.1",
     "semantic-release": "^18.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@latipun7",
+    "rules": {
+      "import/no-extraneous-dependencies": "off"
+    }
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
