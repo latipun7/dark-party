@@ -47,6 +47,13 @@ const syntaxHighlight: TokenColor[] = [
     },
   },
   {
+    name: 'variable.parameter.function.language.special.cls.python',
+    scope: 'variable.parameter.function.language.special.cls.python',
+    settings: {
+      foreground: text.chalky,
+    },
+  },
+  {
     name: 'storage.modifier.lifetime.rust',
     scope: 'storage.modifier.lifetime.rust',
     settings: {
@@ -869,7 +876,7 @@ const syntaxHighlight: TokenColor[] = [
     name: 'punctuation.definition.list.begin.markdown',
     scope: 'punctuation.definition.list.begin.markdown',
     settings: {
-      foreground: text.coral,
+      foreground: text.chalky,
     },
   },
   {
@@ -901,10 +908,17 @@ const syntaxHighlight: TokenColor[] = [
     },
   },
   {
+    name: '[VSCODE-CUSTOM] Markdown Inline Raw punctuation',
+    scope: 'punctuation.definition.raw.markdown',
+    settings: {
+      foreground: text.chalky,
+    },
+  },
+  {
     name: '[VSCODE-CUSTOM] Markdown List Punctuation Definition',
     scope: 'punctuation.definition.list.markdown',
     settings: {
-      foreground: text.coral,
+      foreground: text.chalky,
     },
   },
   {
@@ -944,6 +958,41 @@ const syntaxHighlight: TokenColor[] = [
     name: '[VSCODE-CUSTOM] Markdown Link Title/Description',
     scope:
       'string.other.link.title.markdown,string.other.link.description.markdown',
+    settings: {
+      foreground: text.malibu,
+    },
+  },
+  {
+    name: '[VSCODE-CUSTOM] Asciidoc Inline Raw',
+    scope: 'markup.raw.monospace.asciidoc',
+    settings: {
+      foreground: text.green,
+    },
+  },
+  {
+    name: '[VSCODE-CUSTOM] Asciidoc Inline Raw Punctuation Definition',
+    scope: 'punctuation.definition.asciidoc',
+    settings: {
+      foreground: text.chalky,
+    },
+  },
+  {
+    name: '[VSCODE-CUSTOM] Asciidoc List Punctuation Definition',
+    scope: 'markup.list.asciidoc',
+    settings: {
+      foreground: text.chalky,
+    },
+  },
+  {
+    name: '[VSCODE-CUSTOM] Asciidoc underline link',
+    scope: 'markup.link.asciidoc,markup.other.url.asciidoc',
+    settings: {
+      foreground: text.purple,
+    },
+  },
+  {
+    name: '[VSCODE-CUSTOM] Asciidoc link name',
+    scope: 'string.unquoted.asciidoc,markup.other.url.asciidoc',
     settings: {
       foreground: text.malibu,
     },
