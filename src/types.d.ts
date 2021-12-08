@@ -1,28 +1,40 @@
+type FontStyle = 'italic' | 'bold' | 'underline';
+
 /** TextMate text settings. */
 interface TokenSettings {
-  /** Foreground text color. */
+  /** Foreground color for the token. */
   foreground?: string;
 
-  /** Optional background text color. */
-  background?: string;
+  /** Font style of the rule: 'italic', 'bold' or 'underline' or a combination. */
+  fontStyle?:
+    | FontStyle
+    | `${FontStyle} ${FontStyle}`
+    | `${FontStyle} ${FontStyle} ${FontStyle}`;
+}
 
-  /** Optional text font style. */
-  fontStyle?: 'italic' | 'bold' | 'underline' | 'normal';
+interface SemanticToken {
+  foreground: string;
+  bold?: boolean;
+  italic?: boolean;
+  underline?: boolean;
 }
 
 /** TextMate token color. */
 export interface TokenColor {
-  /** Optional name. */
+  /** Description of the rule. */
   name?: string;
 
-  /** Array of scopes. */
+  /** Scope selector against which this rule matches. */
   scope: string | string[];
 
-  /** TextMate text settings. */
+  /** Colors and styles for the token. */
   settings: TokenSettings;
 }
 
-export type SemanticTokenColor = Record<string, string | TokenSettings>;
+export type SemanticTokenColors = Record<
+  string,
+  string | TokenSettings | SemanticToken
+>;
 
 /** Dark Party color theme. */
 export interface DarkParty {
@@ -35,12 +47,12 @@ export interface DarkParty {
   /** Enable semantic highlighting? */
   semanticHighlighting?: boolean;
 
-  /** Base main theme color. */
+  /** Workbench theme color. */
   colors?: Record<string, string>;
 
   /** TextMate token color for syntax highlighting. */
   tokenColors?: TokenColor[];
 
   /** Semantic highlighting color theme. */
-  semanticTokenColors?: any;
+  semanticTokenColors?: SemanticTokenColors;
 }

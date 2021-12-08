@@ -1,7 +1,7 @@
-import type { SemanticTokenColor } from '../types';
+import type { SemanticTokenColors } from '../types';
 import { text } from './colors';
 
-const semanticHighlight: SemanticTokenColor = {
+const semanticHighlight: SemanticTokenColors = {
   enumMember: {
     foreground: text.fountainBlue,
   },

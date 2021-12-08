@@ -785,7 +785,6 @@ const syntaxHighlight: TokenColor[] = [
     name: 'Attribute IDs',
     scope: 'entity.other.attribute-name.id',
     settings: {
-      fontStyle: 'normal',
       foreground: text.malibu,
     },
   },
@@ -793,7 +792,6 @@ const syntaxHighlight: TokenColor[] = [
     name: 'Attribute class',
     scope: 'entity.other.attribute-name.class.css',
     settings: {
-      fontStyle: 'normal',
       foreground: text.whiskey,
     },
   },

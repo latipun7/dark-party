@@ -29,7 +29,7 @@
       {
         "label": "Dark Party",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-party.json"
+        "path": "./themes/dark-party-color-theme.json"
       }
     ]
   },
