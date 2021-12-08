@@ -3,9 +3,6 @@ import { NOT_THEME_KEYS, THEME_COLOR_URL } from '../src/constants';
 import colorThemeKeys from '../src/themes/theme-colors';
 import { writeFileToThemeDirectory } from '../src/utils';
 
-/**
- * Get all html text of the theme color pages in vscode api references.
- */
 function getBodyHTML(url: string): Promise<string> {
   const result: Promise<string> = new Promise((resolve, reject) => {
     get(url, (response) => {
@@ -23,24 +20,25 @@ function getBodyHTML(url: string): Promise<string> {
   return result;
 }
 
-/**
- * Get all possible color theme available.
- */
-async function getColorTheme(url: string) {
+async function scrapeAvailableColorTheme(url: string) {
   const bodyHTML = await getBodyHTML(url);
 
-  const allCodeTags = bodyHTML.match(/<code>.*?<\/code>/gi);
+  const codeAndH2TagRegex = /<code>[\w.]*?<\/code>|<h2.*?>.*?<\/h2>/gi;
+  const tags = bodyHTML.match(codeAndH2TagRegex);
 
-  if (!allCodeTags) {
-    throw new Error(
-      "Couldn't find any matches with <code>...</code>, maybe docs have chaged?"
-    );
+  if (!tags) {
+    throw new Error("Couldn't find any tag matches, maybe docs have chaged?");
   }
 
-  const colorTheme = [...allCodeTags]
-    .map((key) => key.replace('<code>', '').replace('</code>', ''))
-    .filter((key) => !/ /.test(key)) // Remove if contains spaces
-    .filter((key) => !/#.../.test(key)) // Remove if is a hex color
+  const colorTheme = [...tags]
+    .map((key) =>
+      key
+        .replace('<code>', '')
+        .replace('</code>', '')
+        .replace(/<h2.*?>/, '\n')
+        .replace('</h2>', '\n')
+    )
+    .filter((key) => !/(?:Color formats|Extension colors)/i.test(key))
     .filter((key) => !/&quot;/.test(key)) // Remove if contains quotes
     .filter((key) => key.length > 4) // Remove if it's very small
     .filter((key) => !NOT_THEME_KEYS.includes(key)); // Remove if its in the denylist
@@ -49,22 +47,22 @@ async function getColorTheme(url: string) {
 }
 
 (async () => {
-  const colorThemeAvailable = await getColorTheme(THEME_COLOR_URL);
+  const colorThemeAvailable = await scrapeAvailableColorTheme(THEME_COLOR_URL);
 
-  let contents = 'Unsupported keys (probably deprecated): \n';
-
+  let contents = 'Unsupported keys (probably deprecated):\n';
   for (const key of Object.keys(colorThemeKeys)) {
     if (!colorThemeAvailable.includes(key)) {
-      contents += `${key}\n`;
+      contents += `  '${key}'\n`;
     }
   }
 
-  contents += '\n\nPossible missing keys: \n';
+  contents += '\nPossible missing keys:\n';
   for (const key of colorThemeAvailable) {
     if (!Object.keys(colorThemeKeys).includes(key)) {
-      contents += `${key}\n`;
+      contents += /^\n/.test(key) ? `${key}` : `  '${key}': null,\n`;
     }
   }
 
   writeFileToThemeDirectory('missing-keys.txt', contents);
-})().catch(() => {});
+  // eslint-disable-next-line no-console
+})().catch(console.error);

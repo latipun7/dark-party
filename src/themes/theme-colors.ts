@@ -11,11 +11,28 @@ const themeColor = {
   foreground: theme.foreground,
   'widget.shadow': null,
   'selection.background': theme.purple,
+  descriptionForeground: null,
   errorForeground: theme.red,
+  'icon.foreground': null,
+  'sash.hoverBorder': null,
 
   // Window border
+  'window.activeBorder': null,
+  'window.inactiveBorder': null,
 
   // Text colors
+  'textBlockQuote.background': null,
+  'textBlockQuote.border': null,
+  'textCodeBlock.background': null,
+  'textLink.activeForeground': null,
+  'textLink.foreground': null,
+  'textPreformat.foreground': null,
+  'textSeparator.foreground': null,
+
+  // Action colors
+  'toolbar.hoverBackground': null,
+  'toolbar.hoverOutline': null,
+  'toolbar.activeBackground': null,
 
   // Button control
   'button.background': theme.selection,
@@ -24,11 +41,16 @@ const themeColor = {
   'button.secondaryForeground': theme.foreground,
   'button.secondaryBackground': theme.background,
   'button.secondaryHoverBackground': theme.backgroundLight,
+  'button.border': null,
+  'checkbox.background': null,
+  'checkbox.foreground': null,
+  'checkbox.border': null,
 
   // Dropdown control
   'dropdown.background': theme.backgroundLight,
   'dropdown.border': theme.backgroundDarker,
   'dropdown.foreground': theme.foreground,
+  'dropdown.listBackground': null,
 
   // Input control
   'input.background': theme.background,
@@ -45,6 +67,8 @@ const themeColor = {
   'inputValidation.errorForeground': null,
   'inputValidation.errorBackground': null,
   'inputValidation.errorBorder': theme.red,
+  'inputOption.activeBackground': null,
+  'inputOption.activeForeground': null,
 
   // Scrollbar control
   'scrollbar.shadow': null,
@@ -75,6 +99,18 @@ const themeColor = {
   'listFilterWidget.background': theme.backgroundLight,
   'listFilterWidget.outline': theme.backgroundLighter,
   'listFilterWidget.noMatchesOutline': theme.red,
+  'list.activeSelectionIconForeground': null,
+  'list.focusHighlightForeground': null,
+  'list.focusOutline': null,
+  'list.inactiveSelectionIconForeground': null,
+  'list.inactiveFocusBackground': null,
+  'list.inactiveFocusOutline': null,
+  'list.invalidItemForeground': null,
+  'list.filterMatchBackground': null,
+  'list.filterMatchBorder': null,
+  'list.deemphasizedForeground': null,
+  'tree.indentGuidesStroke': null,
+  'tree.tableColumnsBorder': null,
 
   // Activity Bar
   'activityBar.background': theme.backgroundLight,
@@ -85,6 +121,8 @@ const themeColor = {
   'activityBar.activeBackground': chroma(theme.purple).alpha(0.06).hex(),
   'activityBarBadge.background': theme.pink,
   'activityBarBadge.foreground': theme.foreground,
+  'activityBar.dropBorder': null,
+  'activityBar.activeFocusBorder': null,
 
   // Side Bar
   'sideBar.background': theme.backgroundDark,
@@ -94,8 +132,22 @@ const themeColor = {
   'sideBarSectionHeader.background': theme.background,
   'sideBarSectionHeader.foreground': null,
   'sideBarSectionHeader.border': theme.backgroundDarker,
+  'sideBar.dropBackground': null,
 
   // Minimap
+  'minimap.findMatchHighlight': null,
+  'minimap.selectionHighlight': null,
+  'minimap.errorHighlight': null,
+  'minimap.warningHighlight': null,
+  'minimap.background': null,
+  'minimap.selectionOccurrenceHighlight': null,
+  'minimap.foregroundOpacity': null,
+  'minimapSlider.background': null,
+  'minimapSlider.hoverBackground': null,
+  'minimapSlider.activeBackground': null,
+  'minimapGutter.addedBackground': null,
+  'minimapGutter.modifiedBackground': null,
+  'minimapGutter.deletedBackground': null,
 
   // Editor Groups & Tabs
   'editorGroup.border': theme.purple,
@@ -113,6 +165,26 @@ const themeColor = {
   'tab.inactiveForeground': theme.comment,
   'tab.unfocusedActiveForeground': null,
   'tab.unfocusedInactiveForeground': null,
+  'editorGroupHeader.border': null,
+  'editorGroup.emptyBackground': null,
+  'editorGroup.focusedEmptyBorder': null,
+  'tab.unfocusedActiveBackground': null,
+  'tab.unfocusedActiveBorderTop': null,
+  'tab.lastPinnedBorder': null,
+  'tab.unfocusedInactiveBackground': null,
+  'tab.hoverBackground': null,
+  'tab.unfocusedHoverBackground': null,
+  'tab.hoverForeground': null,
+  'tab.unfocusedHoverForeground': null,
+  'tab.hoverBorder': null,
+  'tab.unfocusedHoverBorder': null,
+  'tab.activeModifiedBorder': null,
+  'tab.inactiveModifiedBorder': null,
+  'tab.unfocusedActiveModifiedBorder': null,
+  'tab.unfocusedInactiveModifiedBorder': null,
+  'editorPane.background': null,
+  'sideBySideEditor.horizontalBorder': null,
+  'sideBySideEditor.verticalBorder': null,
 
   // Editor colors
   'editor.foreground': theme.foreground,
@@ -133,10 +205,6 @@ const themeColor = {
   'editor.lineHighlightBorder': theme.selection,
   'editorLink.activeForeground': theme.cyan,
   'editor.rangeHighlightBackground': chroma(theme.purple).alpha(0.08).hex(),
-  'editor.snippetTabstopHighlightBackground': theme.background,
-  'editor.snippetTabstopHighlightBorder': theme.comment,
-  'editor.snippetFinalTabstopHighlightBackground': theme.background,
-  'editor.snippetFinalTabstopHighlightBorder': theme.green,
   'editorWhitespace.foreground': theme.nonText,
   'editorIndentGuide.background': theme.nonText,
   'editorIndentGuide.activeBackground': chroma(theme.white).alpha(0.27).hex(),
@@ -166,12 +234,73 @@ const themeColor = {
   'editorGutter.modifiedBackground': chroma(theme.cyan).alpha(0.5).hex(),
   'editorGutter.addedBackground': chroma(theme.green).alpha(0.5).hex(),
   'editorGutter.deletedBackground': chroma(theme.red).alpha(0.5).hex(),
+  'editorLineNumber.activeForeground': null,
+  'editorCursor.background': null,
+  'editor.selectionForeground': null,
+  'editor.selectionHighlightBorder': null,
+  'editor.wordHighlightBorder': null,
+  'editor.wordHighlightStrongBorder': null,
+  'editor.findMatchBorder': null,
+  'editor.findMatchHighlightBorder': null,
+  'editor.findRangeHighlightBorder': null,
+  'searchEditor.findMatchBackground': null,
+  'searchEditor.findMatchBorder': null,
+  'searchEditor.textInputBorder': null,
+  'editor.rangeHighlightBorder': null,
+  'editor.symbolHighlightBackground': null,
+  'editor.symbolHighlightBorder': null,
+  'editorInlayHint.background': null,
+  'editorInlayHint.foreground': null,
+  'editorInlayHint.typeForeground': null,
+  'editorInlayHint.typeBackground': null,
+  'editorInlayHint.parameterForeground': null,
+  'editorInlayHint.parameterBackground': null,
+  'editor.linkedEditingBackground': null,
+  'editorLightBulb.foreground': null,
+  'editorLightBulbAutoFix.foreground': null,
+  'editorBracketHighlight.foreground1': null,
+  'editorBracketHighlight.foreground2': null,
+  'editorBracketHighlight.foreground3': null,
+  'editorBracketHighlight.foreground4': null,
+  'editorBracketHighlight.foreground5': null,
+  'editorBracketHighlight.foreground6': null,
+  'editorBracketHighlight.unexpectedBracket.foreground': null,
+  'editorBracketPairGuide.activeBackground1': null,
+  'editorBracketPairGuide.activeBackground2': null,
+  'editorBracketPairGuide.activeBackground3': null,
+  'editorBracketPairGuide.activeBackground4': null,
+  'editorBracketPairGuide.activeBackground5': null,
+  'editorBracketPairGuide.activeBackground6': null,
+  'editorBracketPairGuide.background1': null,
+  'editorBracketPairGuide.background2': null,
+  'editorBracketPairGuide.background3': null,
+  'editorBracketPairGuide.background4': null,
+  'editorBracketPairGuide.background5': null,
+  'editorBracketPairGuide.background6': null,
+  'editorOverviewRuler.background': null,
+  'editorOverviewRuler.bracketMatchForeground': null,
+  'editorError.background': null,
+  'editorWarning.background': null,
+  'editorInfo.foreground': null,
+  'editorInfo.border': null,
+  'editorInfo.background': null,
+  'editorHint.foreground': null,
+  'editorHint.border': null,
+  'problemsErrorIcon.foreground': null,
+  'problemsWarningIcon.foreground': null,
+  'problemsInfoIcon.foreground': null,
+  'editorUnnecessaryCode.border': null,
+  'editorUnnecessaryCode.opacity': null,
+  'editorGutter.commentRangeForeground': null,
+  'editorGutter.foldingControlForeground': null,
 
   // Diff editor colors
   'diffEditor.insertedTextBackground': chroma(theme.green).alpha(0.13).hex(),
   'diffEditor.insertedTextBorder': null,
   'diffEditor.removedTextBackground': chroma(theme.red).alpha(0.31).hex(),
   'diffEditor.removedTextBorder': null,
+  'diffEditor.border': null,
+  'diffEditor.diagonalFill': null,
 
   // Editor widget colors
   'editorWidget.background': theme.backgroundDark,
@@ -187,6 +316,21 @@ const themeColor = {
   'editorMarkerNavigation.background': theme.backgroundDark,
   'editorMarkerNavigationError.background': null,
   'editorMarkerNavigationWarning.background': null,
+  'editorWidget.foreground': null,
+  'editorWidget.border': null,
+  'editorWidget.resizeBorder': null,
+  'editorSuggestWidget.focusHighlightForeground': null,
+  'editorSuggestWidget.selectedForeground': null,
+  'editorSuggestWidget.selectedIconForeground': null,
+  'editorHoverWidget.foreground': null,
+  'editorHoverWidget.highlightForeground': null,
+  'editorHoverWidget.statusBarBackground': null,
+  'editorGhostText.border': null,
+  'editorGhostText.foreground': null,
+  'editorMarkerNavigationInfo.background': null,
+  'editorMarkerNavigationError.headerBackground': null,
+  'editorMarkerNavigationWarning.headerBackground': null,
+  'editorMarkerNavigationInfo.headerBackground': null,
 
   // Peek view colors
   'peekView.border': theme.selection,
@@ -206,6 +350,7 @@ const themeColor = {
   'peekViewTitle.background': theme.backgroundDarker,
   'peekViewTitleDescription.foreground': theme.comment,
   'peekViewTitleLabel.foreground': theme.foreground,
+  'peekViewEditor.matchHighlightBorder': null,
 
   // Merge conflicts colors
   'merge.currentHeaderBackground': chroma(theme.green).alpha(0.56).hex(),
@@ -215,6 +360,9 @@ const themeColor = {
   'merge.border': null,
   'editorOverviewRuler.currentContentForeground': theme.green,
   'editorOverviewRuler.incomingContentForeground': theme.purple,
+  'merge.commonContentBackground': null,
+  'merge.commonHeaderBackground': null,
+  'editorOverviewRuler.commonContentForeground': null,
 
   // Panel colors
   'panel.background': theme.background,
@@ -222,6 +370,13 @@ const themeColor = {
   'panelTitle.activeBorder': theme.pink,
   'panelTitle.activeForeground': theme.foreground,
   'panelTitle.inactiveForeground': theme.comment,
+  'panel.dropBorder': null,
+  'panelInput.border': null,
+  'panelSection.border': null,
+  'panelSection.dropBackground': null,
+  'panelSectionHeader.background': null,
+  'panelSectionHeader.foreground': null,
+  'panelSectionHeader.border': null,
 
   // Status Bar colors
   'statusBar.background': theme.backgroundDarker,
@@ -243,9 +398,28 @@ const themeColor = {
   'titleBar.activeForeground': theme.foreground,
   'titleBar.inactiveBackground': theme.backgroundDarker,
   'titleBar.inactiveForeground': theme.comment,
+  'statusBar.debuggingBorder': null,
+  'statusBar.noFolderBorder': null,
+  'statusBarItem.prominentForeground': null,
+  'statusBarItem.errorBackground': null,
+  'statusBarItem.errorForeground': null,
+  'statusBarItem.warningBackground': null,
+  'statusBarItem.warningForeground': null,
+
+  // Title Bar colors
+  'titleBar.border': null,
 
   // Menu Bar colors
   'menu.separatorBackground': null,
+  'menubar.selectionForeground': null,
+  'menubar.selectionBackground': null,
+  'menubar.selectionBorder': null,
+  'menu.foreground': null,
+  'menu.background': null,
+  'menu.selectionForeground': null,
+  'menu.selectionBackground': null,
+  'menu.selectionBorder': null,
+  'menu.border': null,
 
   // Notification colors
   'notificationCenter.border': null,
@@ -258,6 +432,12 @@ const themeColor = {
   'notificationLink.foreground': null,
   'notificationsErrorIcon.foreground': null,
   'notificationsWarningIcon.foreground': null,
+  'notificationsInfoIcon.foreground': null,
+
+  // Banner colors
+  'banner.background': null,
+  'banner.foreground': null,
+  'banner.iconForeground': null,
 
   // Extensions colors
   'extensionButton.prominentForeground': theme.foreground,
@@ -265,10 +445,30 @@ const themeColor = {
   'extensionButton.prominentHoverBackground': chroma(theme.green)
     .alpha(0.38)
     .hex(),
+  'extensionBadge.remoteBackground': null,
+  'extensionBadge.remoteForeground': null,
+  'extensionIcon.starForeground': null,
+  'extensionIcon.verifiedForeground': null,
 
   // Quick picker colors
   'pickerGroup.border': theme.purple,
   'pickerGroup.foreground': theme.cyan,
+  'quickInput.background': null,
+  'quickInput.foreground': null,
+  'quickInputList.focusBackground': null,
+  'quickInputList.focusForeground': null,
+  'quickInputList.focusIconForeground': null,
+  'quickInputTitle.background': null,
+
+  // Keybinding label colors
+  'keybindingLabel.background': null,
+  'keybindingLabel.foreground': null,
+  'keybindingLabel.border': null,
+  'keybindingLabel.bottomBorder': null,
+
+  // Keyboard shortcut table colors
+  'keybindingTable.headerBackground': null,
+  'keybindingTable.rowsBackground': null,
 
   // Integrated Terminal colors
   'terminal.background': theme.background,
@@ -291,18 +491,56 @@ const themeColor = {
   'terminal.ansiWhite': theme.color7,
   'terminalCursor.background': null,
   'terminalCursor.foreground': theme.pink,
+  'terminal.border': null,
+  'terminal.selectionBackground': null,
+  'terminal.dropBackground': null,
+  'terminal.tab.activeBorder': null,
 
   // Debug colors
   'debugToolBar.background': theme.backgroundDark,
+  'debugToolBar.border': null,
+  'editor.stackFrameHighlightBackground': null,
+  'editor.focusedStackFrameHighlightBackground': null,
+  'editor.inlineValuesForeground': null,
+  'editor.inlineValuesBackground': null,
+  'debugView.exceptionLabelForeground': null,
+  'debugView.exceptionLabelBackground': null,
+  'debugView.stateLabelForeground': null,
+  'debugView.stateLabelBackground': null,
+  'debugView.valueChangedHighlight': null,
+  'debugTokenExpression.name': null,
+  'debugTokenExpression.value': null,
+  'debugTokenExpression.string': null,
+  'debugTokenExpression.boolean': null,
+  'debugTokenExpression.number': null,
+  'debugTokenExpression.error': null,
 
-  // Testing view colors
+  // Testing colors
+  'testing.iconFailed': null,
+  'testing.iconErrored': null,
+  'testing.iconPassed': null,
+  'testing.runAction': null,
+  'testing.iconQueued': null,
+  'testing.iconUnset': null,
+  'testing.iconSkipped': null,
+  'testing.peekBorder': null,
+  'testing.peekHeaderBackground': null,
+  'testing.message.error.decorationForeground': null,
+  'testing.message.error.lineBackground': null,
+  'testing.message.info.decorationForeground': null,
+  'testing.message.info.lineBackground': null,
 
   // Welcome page colors
-  'welcomePage.buttonBackground': null,
-  'welcomePage.buttonHoverBackground': null,
   'walkThrough.embeddedEditorBackground': theme.backgroundDark,
+  'welcomePage.background': null,
+  'welcomePage.progress.background': null,
+  'welcomePage.progress.foreground': null,
+  'welcomePage.tileBackground': null,
+  'welcomePage.tileHoverBackground': null,
+  'welcomePage.tileShadow': null,
 
   // Source Control colors
+  'scm.providerBorder': null,
 
   // Git colors
   'gitDecoration.modifiedResourceForeground': theme.cyan,
@@ -310,6 +548,11 @@ const themeColor = {
   'gitDecoration.untrackedResourceForeground': theme.green,
   'gitDecoration.ignoredResourceForeground': theme.comment,
   'gitDecoration.conflictingResourceForeground': theme.orange,
+  'gitDecoration.addedResourceForeground': null,
+  'gitDecoration.renamedResourceForeground': null,
+  'gitDecoration.stageModifiedResourceForeground': null,
+  'gitDecoration.stageDeletedResourceForeground': null,
+  'gitDecoration.submoduleResourceForeground': null,
 
   // Settings Editor colors
   'settings.headerForeground': theme.foreground,
@@ -326,6 +569,10 @@ const themeColor = {
   'settings.numberInputBackground': theme.backgroundDark,
   'settings.numberInputForeground': theme.foreground,
   'settings.numberInputBorder': theme.backgroundDarker,
+  'settings.dropdownListBorder': null,
+  'settings.rowHoverBackground': null,
+  'settings.focusedRowBackground': null,
+  'settings.focusedRowBorder': null,
 
   // Breadcrumbs colors
   'breadcrumb.foreground': theme.comment,
@@ -335,14 +582,104 @@ const themeColor = {
   'breadcrumbPicker.background': theme.backgroundDarker,
 
   // Snippets colors
+  'editor.snippetTabstopHighlightBackground': theme.background,
+  'editor.snippetTabstopHighlightBorder': theme.comment,
+  'editor.snippetFinalTabstopHighlightBackground': theme.background,
+  'editor.snippetFinalTabstopHighlightBorder': theme.green,
 
   // Symbol Icons colors
+  'symbolIcon.arrayForeground': null,
+  'symbolIcon.booleanForeground': null,
+  'symbolIcon.classForeground': null,
+  'symbolIcon.colorForeground': null,
+  'symbolIcon.constantForeground': null,
+  'symbolIcon.constructorForeground': null,
+  'symbolIcon.enumeratorForeground': null,
+  'symbolIcon.enumeratorMemberForeground': null,
+  'symbolIcon.eventForeground': null,
+  'symbolIcon.fieldForeground': null,
+  'symbolIcon.fileForeground': null,
+  'symbolIcon.folderForeground': null,
+  'symbolIcon.functionForeground': null,
+  'symbolIcon.interfaceForeground': null,
+  'symbolIcon.keyForeground': null,
+  'symbolIcon.keywordForeground': null,
+  'symbolIcon.methodForeground': null,
+  'symbolIcon.moduleForeground': null,
+  'symbolIcon.namespaceForeground': null,
+  'symbolIcon.nullForeground': null,
+  'symbolIcon.numberForeground': null,
+  'symbolIcon.objectForeground': null,
+  'symbolIcon.operatorForeground': null,
+  'symbolIcon.packageForeground': null,
+  'symbolIcon.propertyForeground': null,
+  'symbolIcon.referenceForeground': null,
+  'symbolIcon.snippetForeground': null,
+  'symbolIcon.stringForeground': null,
+  'symbolIcon.structForeground': null,
+  'symbolIcon.textForeground': null,
+  'symbolIcon.typeParameterForeground': null,
+  'symbolIcon.unitForeground': null,
+  'symbolIcon.variableForeground': null,
+
+  // Debug Icons colors
+  'debugIcon.breakpointForeground': null,
+  'debugIcon.breakpointDisabledForeground': null,
+  'debugIcon.breakpointUnverifiedForeground': null,
+  'debugIcon.breakpointCurrentStackframeForeground': null,
+  'debugIcon.breakpointStackframeForeground': null,
+  'debugIcon.startForeground': null,
+  'debugIcon.pauseForeground': null,
+  'debugIcon.stopForeground': null,
+  'debugIcon.disconnectForeground': null,
+  'debugIcon.restartForeground': null,
+  'debugIcon.stepOverForeground': null,
+  'debugIcon.stepIntoForeground': null,
+  'debugIcon.stepOutForeground': null,
+  'debugIcon.continueForeground': null,
+  'debugIcon.stepBackForeground': null,
+  'debugConsole.infoForeground': null,
+  'debugConsole.warningForeground': null,
+  'debugConsole.errorForeground': null,
+  'debugConsole.sourceForeground': null,
+  'debugConsoleInputIcon.foreground': null,
 
   // Notebook colors
+  'notebook.cellBorderColor': null,
+  'notebook.cellHoverBackground': null,
+  'notebook.cellInsertionIndicator': null,
+  'notebook.cellStatusBarItemHoverBackground': null,
+  'notebook.cellToolbarSeparator': null,
+  'notebook.cellEditorBackground': null,
+  'notebook.focusedCellBackground': null,
+  'notebook.focusedCellBorder': null,
+  'notebook.focusedEditorBorder': null,
+  'notebook.inactiveFocusedCellBorder': null,
+  'notebook.inactiveSelectedCellBorder': null,
+  'notebook.outputContainerBackgroundColor': null,
+  'notebook.outputContainerBorderColor': null,
+  'notebook.selectedCellBackground': null,
+  'notebook.selectedCellBorder': null,
+  'notebook.symbolHighlightBackground': null,
+  'notebookScrollbarSlider.activeBackground': null,
+  'notebookScrollbarSlider.background': null,
+  'notebookScrollbarSlider.hoverBackground': null,
+  'notebookStatusErrorIcon.foreground': null,
+  'notebookStatusRunningIcon.foreground': null,
+  'notebookStatusSuccessIcon.foreground': null,
 
   // Chart colors
+  'charts.foreground': null,
+  'charts.lines': null,
+  'charts.red': null,
+  'charts.blue': null,
+  'charts.yellow': null,
+  'charts.orange': null,
+  'charts.green': null,
+  'charts.purple': null,
 
-  // Testing Colors
+  // Ports Colors
+  'ports.iconRunningProcessForeground': null,
 };
 
 export default themeColor;
