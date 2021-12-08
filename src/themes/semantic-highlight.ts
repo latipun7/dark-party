@@ -23,6 +23,9 @@ const semanticHighlight: SemanticTokenColor = {
   'parameter.label:dart': {
     foreground: text.lightWhite,
   },
+  macro: {
+    foreground: text.whiskey,
+  },
 };
 
 export default semanticHighlight;

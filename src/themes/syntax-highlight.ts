@@ -1797,6 +1797,13 @@ const syntaxHighlight: TokenColor[] = [
       foreground: text.chalky,
     },
   },
+  {
+    name: 'c variable readwrite',
+    scope: 'variable.other.readwrite.c',
+    settings: {
+      foreground: text.coral,
+    },
+  },
 ];
 
 export default syntaxHighlight;
