@@ -1,7 +1,5 @@
-'use strict';
-
-const chroma = require('chroma-js');
-const { theme } = require('./colors');
+import chroma from 'chroma-js';
+import { theme } from './colors';
 
 const themeColor = {
   // Contrast colors
@@ -347,4 +345,4 @@ const themeColor = {
   // Testing Colors
 };
 
-module.exports = themeColor;
+export default themeColor;

@@ -1,9 +1,7 @@
-'use strict';
+import type { TokenColor } from '../types';
+import { text } from './colors';
 
-const { text } = require('./colors');
-
-/** @type {import('../declaration').TokenColor[]} */
-const syntaxHighlight = [
+const syntaxHighlight: TokenColor[] = [
   {
     name: 'unison punctuation',
     scope:
@@ -1758,7 +1756,7 @@ const syntaxHighlight = [
     name: 'Underline',
     scope: 'markup.underline',
     settings: {
-      fontStyle: text.underline,
+      fontStyle: 'underline',
     },
   },
   {
@@ -1801,4 +1799,4 @@ const syntaxHighlight = [
   },
 ];
 
-module.exports = syntaxHighlight;
+export default syntaxHighlight;

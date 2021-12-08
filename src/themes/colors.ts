@@ -1,5 +1,3 @@
-'use strict';
-
 const text = {
   chalky: '#e5c07b',
   coral: '#ef596f',
@@ -61,4 +59,4 @@ const theme = {
   backgroundDarker: '#191A21',
 };
 
-module.exports = { text, theme };
+export { text, theme };

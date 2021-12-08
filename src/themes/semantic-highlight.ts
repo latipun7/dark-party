@@ -1,9 +1,7 @@
-'use strict';
+import type { SemanticTokenColor } from '../types';
+import { text } from './colors';
 
-const { text } = require('./colors');
-
-/** @type {import('../declaration').SemanticTokenColor} */
-const semanticHighlight = {
+const semanticHighlight: SemanticTokenColor = {
   enumMember: {
     foreground: text.fountainBlue,
   },
@@ -27,4 +25,4 @@ const semanticHighlight = {
   },
 };
 
-module.exports = semanticHighlight;
+export default semanticHighlight;

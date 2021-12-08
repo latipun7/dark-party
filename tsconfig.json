@@ -1,0 +1,6 @@
+{
+  "extends": "@latipun7/tsconfig/cjs",
+  "include": ["src/**/*", "scripts/**/*"],
+  "exclude": ["**/node_modules"],
+  "compilerOptions": { "checkJs": true, "noEmit": true }
+}

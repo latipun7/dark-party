@@ -1,25 +1,13 @@
-'use strict';
-
-const { get } = require('https');
-
-const { writeFileSyncToThemeDirectory } = require('./utils');
-const colorThemeKeys = require('./themes/theme-color');
-
-const THEME_COLOR_URL =
-  'https://code.visualstudio.com/api/references/theme-color';
-
-const NOT_THEME_KEYS = [
-  'workbench.colorCustomizations',
-  'editor.tokenColorCustomizations',
-];
+import { get } from 'https';
+import { NOT_THEME_KEYS, THEME_COLOR_URL } from '../src/constants';
+import colorThemeKeys from '../src/themes/theme-colors';
+import { writeFileToThemeDirectory } from '../src/utils';
 
 /**
  * Get all html text of the theme color pages in vscode api references.
- * @param {string} url - Theme color url.
- * @returns {Promise<string>} Promise of html text.
  */
-function getBodyHTML(url) {
-  const result = new Promise((resolve, reject) => {
+function getBodyHTML(url: string): Promise<string> {
+  const result: Promise<string> = new Promise((resolve, reject) => {
     get(url, (response) => {
       let body = '';
       response.setEncoding('utf8');
@@ -37,10 +25,8 @@ function getBodyHTML(url) {
 
 /**
  * Get all possible color theme available.
- * @param {string} url - Theme color api references url.
- * @returns {Promise<string[]>} Promise of color theme array.
  */
-async function getColorTheme(url) {
+async function getColorTheme(url: string) {
   const bodyHTML = await getBodyHTML(url);
 
   const allCodeTags = bodyHTML.match(/<code>.*?<\/code>/gi);
@@ -57,7 +43,7 @@ async function getColorTheme(url) {
     .filter((key) => !/#.../.test(key)) // Remove if is a hex color
     .filter((key) => !/&quot;/.test(key)) // Remove if contains quotes
     .filter((key) => key.length > 4) // Remove if it's very small
-    .filter((key) => !NOT_THEME_KEYS.includes(key)); // Remove if its in the blacklist
+    .filter((key) => !NOT_THEME_KEYS.includes(key)); // Remove if its in the denylist
 
   return colorTheme;
 }
@@ -80,5 +66,5 @@ async function getColorTheme(url) {
     }
   }
 
-  writeFileSyncToThemeDirectory('missing-keys.txt', contents);
-})();
+  writeFileToThemeDirectory('missing-keys.txt', contents);
+})().catch(() => {});
