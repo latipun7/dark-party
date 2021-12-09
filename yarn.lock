@@ -251,14 +251,14 @@
   dependencies:
     conventional-changelog-conventionalcommits "^4.6.1"
 
-"@latipun7/eslint-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@latipun7/eslint-config/-/eslint-config-1.0.3.tgz#9e1995d55502b8a67ce224e383d3f30a0c15be81"
-  integrity sha512-rY8pJNdmMHoKxJ4WQrxyR3D0HENOwURPj2Gy6FNX+tUe9c9gLOYuOJYLybW0hMivB4F3E6B2Qs0ALbD56AOmJw==
+"@latipun7/eslint-config@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@latipun7/eslint-config/-/eslint-config-1.0.4.tgz#e7ffd63499d49bb61b277251bbe20169e5b7ea9d"
+  integrity sha512-vewViBegqp6zkeS+RcKqOHG+stLx/FLf2uA0MDTW2XjaHkL/JyZqPOM+zHzK8NGI0nMKfOPD03hv4lWwzOqjUg==
   dependencies:
     "@next/eslint-plugin-next" "^12.0.7"
-    "@typescript-eslint/eslint-plugin" "^5.5.0"
-    "@typescript-eslint/parser" "^5.5.0"
+    "@typescript-eslint/eslint-plugin" "^5.6.0"
+    "@typescript-eslint/parser" "^5.6.0"
     confusing-browser-globals "^1.0.10"
     eslint-config-prettier "^8.3.0"
     eslint-import-resolver-typescript "^2.5.0"
@@ -742,7 +742,7 @@
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.1.tgz#d8f1c0d0dc23afad6dc16a9e993a0865774b4065"
   integrity sha512-xoDlM2S4ortawSWORYqsdU+2rxdh4LRW9ytc3zmT37RIKQh6IHyKwwtKhKis9ah8ol07DCkZxPt8BBvPjC6v4g==
 
-"@typescript-eslint/eslint-plugin@^5.5.0":
+"@typescript-eslint/eslint-plugin@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.6.0.tgz#efd8668b3d6627c46ce722c2afe813928fe120a0"
   integrity sha512-MIbeMy5qfLqtgs1hWd088k1hOuRsN9JrHUPwVVKCD99EOUqScd7SrwoZl4Gso05EAP9w1kvLWUVGJOVpRPkDPA==
@@ -768,7 +768,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^5.5.0":
+"@typescript-eslint/parser@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.6.0.tgz#11677324659641400d653253c03dcfbed468d199"
   integrity sha512-YVK49NgdUPQ8SpCZaOpiq1kLkYRPMv9U5gcMrywzI8brtwZjr/tG3sZpuHyODt76W/A0SufNjYt9ZOgrC4tLIQ==
