@@ -1,3 +1,22 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
+
+## [3.2.0](https://github.com/latipun7/dark-party/compare/v3.1.1...v3.2.0) (2021-12-09)
+
+### ✨ Features
+
+- improve C/C++ semantic highlight [`c55beca`](https://github.com/latipun7/dark-party/commit/c55becab5b16ca8a1e73c0855de117765814fa81).
+
+- improve highlight on python, markdown, & asciidoc [`f4eaebd`](https://github.com/latipun7/dark-party/commit/f4eaebd6a0edab627d420b3610382c855abf8b3c).
+
+- use _italic_ font style for comments 💅 [`f4448ec`](https://github.com/latipun7/dark-party/commit/f4448ec20428f73eb65cb21e527d09786e07dc9a).
+
+### 🐛 Fixes
+
+- improve ansi color 🌈 [`6a04e57`](https://github.com/latipun7/dark-party/commit/6a04e57b89e2516b726c1b66ada2545b2a7522e2).
+
 ### [3.1.1](https://github.com/latipun7/dark-party/compare/v3.1.0...v3.1.1) (2021-09-01)
 
 ### 🔐 Security Patches
