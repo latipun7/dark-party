@@ -33,9 +33,6 @@
       }
     ]
   },
-  "activationEvents": [
-    "*"
-  ],
   "extensionKind": [
     "ui",
     "workspace"
