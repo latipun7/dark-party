@@ -11,7 +11,6 @@
   "bugs": {
     "url": "https://github.com/latipun7/dark-party/issues"
   },
-  "packageManager": "yarn@3.1.1",
   "engines": {
     "vscode": ">=1.62.0",
     "node": ">=14.17.0"
