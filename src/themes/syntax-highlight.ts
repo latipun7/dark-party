@@ -1745,8 +1745,16 @@ const syntaxHighlight: TokenColor[] = [
   },
   {
     name: 'Comments',
-    scope: 'comment, punctuation.definition.comment',
+    scope: [
+      'comment',
+      'comment.block',
+      'comment.block.documentation',
+      'comment.line',
+      'comment.line.double-slash',
+      'punctuation.definition.comment',
+    ],
     settings: {
+      fontStyle: 'italic',
       foreground: text.lightDark,
     },
   },
