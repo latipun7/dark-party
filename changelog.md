@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [3.2.1](https://github.com/latipun7/dark-party/compare/v3.2.0...v3.2.1) (2022-02-23)
+
+### 🔐 Security Patches
+
+- **deps:** bump node-fetch from 2.6.6 to 2.6.7 ([#134](https://github.com/latipun7/dark-party/issues/134)) [`c3d27d1`](https://github.com/latipun7/dark-party/commit/c3d27d1d6ee9ab6a2ddd1a8f8934d5cc520d1a2c).
+
+  Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
 ## [3.2.0](https://github.com/latipun7/dark-party/compare/v3.1.1...v3.2.0) (2021-12-09)
 
 ### ✨ Features
