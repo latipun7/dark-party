@@ -80,7 +80,7 @@
     "commitizen": "^4.2.4",
     "eslint": "^8.5.0",
     "husky": "^7.0.4",
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.6",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "semantic-release": "^18.0.1",
